@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Videó lejátszása</title>
+        <meta charset="UTF-8">
+        <style>
+            article, section, aside, nav, header, footer {
+                display: block;
+            }
+            .fejlec {
+                font-size: 18pt;
+                font-family: helvetica;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                font-weight: bold;
+            }
+            .lablec {
+                width: 560px;
+                font-size: 10pt;
+                margin-top: 40px;
+                border-top: 3px #888888 double;
+                padding-top: 30px;
+                text-align: right;
+                font-family: helvetica;
+            }
+        </style>
+    </head>
+    <body>
+        <header id="fejlec" class="fejlec">
+            Videó lejátszása
+        </header>
+         <section id="tartalom">
+            <video id="videom" width="640" controls>
+                <source src="videos/HTML5_video2.mp4" type="video/mp4">
+                A böngésződ nem támogatja a HTML videók lejátszását.
+            </video>
+            <br /><br />
+
+            <button onclick="videom.play()">indítás</button>
+            <button onclick="videom.pause()">leállítás</button>
+            &nbsp;&nbsp;&nbsp;
+
+            <button onclick="indit_leallit()">indítás / leállítás</button>
+            <br /><br />
+
+            <button onclick="videom.volume=0">némítás</button>
+            <button onclick="videom.volume=0.2">halk</button>
+            <button onclick="videom.volume=1">hangos</button>
+            &nbsp;&nbsp;&nbsp;
+
+            <button onclick="alert(videom.ended)">Befejeződött-e</button>
+            <button onclick="alert(videom.duration)">videó hossza mp</button>
+            <button onclick="alert(videom.currentTime)">jelenlegi pozíció</button>
+    
+         </section>
+         <footer id="lablec" class="lablec">
+            Forrás: <a href="http://www.w3schools.com/html/html5_video.asp" target="_blank">
+                http://www.w3schools.com/html/html5_video.asp
+            </a>
+         </footer>
+         <script>
+
+            var videom = document.getElementById('videom');
+
+            function indit_leallit() {
+                if (videom.paused) {
+                    videom.play();
+                }
+                else {
+                    videom.pause();
+                }
+            }
+         </script>
+    </body>
+</html>
