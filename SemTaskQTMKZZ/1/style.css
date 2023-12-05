@@ -1,0 +1,31 @@
+td {
+    color: #fff;
+}
+.menu .btn {
+    text-decoration: none;
+    color: #fff;
+}
+td a {
+    color: #fff;
+}
+.menu {
+    font-weight: 600;
+    transition: all 1s;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+}
+html {
+    background-color: #051937;
+    font-family: tahoma; 
+    font-size: 1rem;
+}
+.header {
+    background-color: #031126;
+}
+body {
+    margin: 0;
+    width: 980px;
+    margin: auto;
+}
