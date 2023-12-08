@@ -1,54 +1,77 @@
 <!DOCTYPE html>
 <html lang="hu">
     <head>
-        <title>Programozás alapjai</title>
+        <title>Programozás alapjai - QTMKZZ</title>
         <link rel="stylesheet" href="style.css">
         <meta content="text/html; charset=UTF-8">
     </head>
     <body>
-        <table align="center" style="table-layout: fixed; color: white; border: 0;" cellspacing="0">
-            <tr class="header">
-                <td colspan="3" style="width: 980px; text-align: center; padding: 1rem;">
-                    <a href="index.html" target="_self"><img src="images/homer-it.webp" height="200" border="0" alt="" style="border-radius: 8px;"></a>
-                </td>
-            </tr>
-            <tr class="header">
-                <td colspan="4" class="menu">
-                    <a class="btn" href="index.html">Kezdőlap</a>
-                    <a class="btn" href="matekanalizis1.html">Matematika Analízis I.</a>
-                    <a class="btn" href="progalap.html">Programozás alapjai</a>
-                    <a class="btn" href="progismeretek.html">Programtervezési ismeretek</a>
-                </td>
-            </tr>
-            <tr>
-                <td style="padding: 0 1rem;">
-                    <br><br>
-                    <b>Programozás alapjai</b>
-                    <br><br>
-                    A Programozás Alapjai kurzus a számítógépes programozás alapelveit és gyakorlati készségeit tanítja. Az előadások során a diákok megismerik a számítógép programozás szintjeit és fejlődését, valamint elsajátítják az alapvető adatstruktúrák és algoritmusok használatát. A kurzus részletesen foglalkozik a C programnyelv alapjaival, beleértve az adattípusokat, pointereket, tömböket és struktúrákat. A diákok kifejezésekkel, operátorokkal és típuskonverzióval ismerkednek meg, és elsajátítják az elágazások, ciklusok és függvények használatát. A kurzus végén a hallgatók megértik a C fordító működését, a memóriakezelést, és elsajátítják a fájlkezelés és az ANSI C kódolás alapjait.
-                    <br><br>
-                    <video width="640" height="360" controls id="myVideo">
-                        <source src="videos/progalap.mp4" type="video/mp4">
-                    </video>
-                    <div>
-                        <button id="playPauseButton">lejátszás / szünet</button>
-                        <button id="muteButton">Némítás / némítás feloldalása</button>
+        <header>
+            <div class="container d-flex justify-between align-center">
+                <img src="images/logo.png" alt="">
+                <div class="menu">
+                    <a href="index.html">Kezdőlap</a>
+                    <a href="matekanalizis1.html" >Matematika Analízis I.</a>
+                    <a href="progismeretek.html">Programtervezési ismeretek</a>
+                    <a href="progalap.html" class="active">Programozás alapjai</a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section>
+                <div class="container">
+                    <div class="d-flex gap2rem">
+                        <div class="width50">
+                            <h1>Programozás alapjai</h1>
+                            <p><b>Tantárgy feladata és célja:</b></p>
+                            <p>A tárgy egyik célja, hogy kialakítsa a hallgatókban a komplex számítási problémák analizálásának és szisztematikus leírásának képességét. 
+                                Ehhez megtanulják a számítási algoritmusok építőelemeit és leírási módszereit. 
+                                A tárgy másik célja az ANSI szabvány szerinti C programozási nyelv elsajátítása. Az algoritmusokat ezen a nyelven implementáljuk.
+                            </p>
+                            <p><b>Tárgy részletes tematikája:</b></p>
+                            <ul class="marginb2rem">
+                                <li>A számítógép és programozása. Programozási nyelvek. 
+                                    A programkészítés menete. Algoritmusok és leírási módszereik. Számlálás és összegzés alapalgoritmusok.</li>
+                                <li>A C programozási nyelv jellemzői és szintaktikai egységei. Eldöntés a kiválasztás alapalgoritmusok.
+                                </li>
+                                <li>Operátorok és kifejezések, típuskonverzió a C nyelvben. A C program szerkezete. Integrátl programfejelesztő eszközök. Egyszerű ki- és bemeneti függvények. Szélsőérték kiválasztás alapalgoritmus.
+                                </li>
+                                <li>A C nyelv utasításai. Vezérlési szerkezetek C nyelvű implementációja. Keresés alapalgoritmus.
+                                </li>
+                                <li>Egydimenziós tömbök és mutatók. Tömbi algoritmusok. Véletlenszám generálás. Sztringek és kezelő függvényeik.
+                                </li>
+                                <li>Függvények, programtervezési alapelvek.
+                                </li>
+                                <li>Struktúrák, struktúra tömbök. Típusdefiníció. Dinamikus memóriakezelés. Önhivatkozó struktúrák.
+                                </li>
+                                <li>Tárolási osztályok. Moduláris programozás. Filekezelés. Saját függvénykönyvtár és header állomány készítése.
+                                </li>
+                                <li>Rekurzió, rendezés.</li>
+                                <li>Kétdimenziós tömbök, mutató tömbök létrehozása és algoritmusai. Dinamikus memóriakezelés. Menü készítése. Függvénypointer.
+                                </li>
+                                <li>A main függvény paraméterei és visszatérési értéke. A C fordító működése, az előfeldolgozó feladatai. Kiválogatás és szétválogatás alapalgoritmusok.
+                                </li>
+                                <li> A C99/C11 szabvány új elemei. Kódolási szabvány. SE alapelvek. Unió, metszet, különbség, összefuttatás alapalgoritmusok.
+                                </li>
+                            </ul>
+                            <div class="d-flex gap1rem">
+                                <a href="matekanalizis1.html" id="tosubject">Megnézem megint az első tárgyat</a>
+                                <a href="index.html" id="backtoindex">Vissza a kezdőlapra</a>
+                            </div>
+                        </div>
+                        <div class="width50">
+                            <div class="width50" style="margin: auto;">
+                                <img src="images/progalap.webp" alt="" style="height: auto; width: 100%; border-radius: 0.5rem;">
+                                <p><i>Irodalom: Brian W. Kernighan, Dennis M. Ritchie: A C programozási nyelv, Az ANSI szerint szabványosított változat.</i></p>
+                            </div>
+                        </div>
                     </div>
-                    <br><br>
-                    Forrás:
-                    <br>
-                    <a href="https://www.bing.com" target="_blank">Bing AI</a>
-                    <br>
-                    <a href="https://youtu.be/VZrDxD0Za9I" target="_blank">YT Videó</a>
-                    <br><br><br><br>
-                </td>
-            </tr>
-            <tr style="height: 40px">
-                <td colspan="3" style="width: 640px; text-align: center">
-                    &copy; Készítette: Bán Tamás József QTMKZZ
-                </td>
-            </tr>
-        </table>
+                    
+                </div>  
+            </section>
+        </main>
+        <footer class="text-center">
+            <p>&copy; Készítette: Bán Tamás József - QTMKZZ</p>
+        </footer>
     </body>
-    <script src="script.js"></script>
 </html>

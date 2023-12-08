@@ -1,47 +1,60 @@
 <!DOCTYPE html>
 <html lang="hu">
     <head>
-        <title>Programtervezési ismeretek</title>
+        <title>Programtervezési ismeretek - QTMKZZ</title>
         <link rel="stylesheet" href="style.css">
         <meta content="text/html; charset=UTF-8">
     </head>
     <body>
-        <table align="center" style="table-layout: fixed; color: white; border: 0;" cellspacing="0">
-            <tr class="header">
-                <td colspan="3" style="width: 980px; text-align: center; padding: 1rem;">
-                    <a href="index.html" target="_self"><img src="images/homer-it.webp" height="200" border="0" alt="" style="border-radius: 8px;"></a>
-                </td>
-            </tr>
-            <tr class="header">
-                <td colspan="4" class="menu">
-                    <a class="btn" href="index.html">Kezdőlap</a>
-                    <a class="btn" href="matekanalizis1.html">Matematika Analízis I.</a>
-                    <a class="btn" href="progalap.html">Programozás alapjai</a>
-                    <a class="btn" href="progismeretek.html">Programtervezési ismeretek</a>
-                </td>
-            </tr>
-            <tr>
-                <td style="padding: 0 1rem;">
-                    <br><br>
-                    <b>Programtervezési ismeretek</b>
-                    <br><br>
-                    A Programtervezési ismeretek tárgy célja a programozási alapok elméleti kiterjesztése. Olyan elméleti alapok elsajátítása, amely minden további programozási nyelvnek része. Modellek és alapvető algoritmusok fejlesztése, használata. Elemi algoritmusok megértése, ezek ábrázolása többféle módon pl: pszeudókód, folyamatábra, struktrogram.
-                    <br>
-                    Az elsajátított informatikai eljárások és módszerek segítségével képes valós üzleti, szervezeti körülmények között az alkalmazások működési feltételeinek feltárására, előnyök, veszélyek, kockázatok mérlegelésére és kommunikációjára. Képes üzleti folyamatok megértésére, elemzésére, a végrehajtást segítő szoftveralkalmazások követelmény-specifikációjának elkészítésére, elvégzésére, egyszerűbb programozási feladatok végrehajtására. Képes az üzleti és informatikai szakemberekkel együttműködve, a leghatékonyabb IT-megoldások felhasználásával gazdasági problémák megoldási változatainak elkészítésére, informatikai támogatás, fejlesztés kezdeményezésére, végrehajtására. Képes adatbázisok menedzselésével kapcsolatos feladatok ellátására, egyszerű adatmigrációs feladatok megoldására. Képes a gazdasági alkalmazások adaptációjára, az IT-alkalmazások bevezetéséhez szükséges szervezeti változtatások kezdeményezésére, a végrehajtásban az együttműködésére. Képes rendszerfejlesztési elvek és módszerek alkalmazására, fejlesztőeszközök (üzleti modellezés, illetve számítógéppel támogatott fejlesztés eszközei) használatára.
-                    <br><br>
-                    <img src="images/progismeretek.jpg" width="192" height="367" alt="">
-                    <br><br>
-                    Forrás:
-                    <br>
-                    <a href="https://www.bing.com" target="_blank">Bing AI</a>
-                    <br><br><br><br>
-                </td>
-            </tr>
-            <tr style="height: 40px">
-                <td colspan="3" style="width: 640px; text-align: center">
-                    &copy; Készítette: Bán Tamás József QTMKZZ
-                </td>
-            </tr>
-        </table>
+        <header>
+            <div class="container d-flex justify-between align-center">
+                <img src="images/logo.png" alt="">
+                <div class="menu">
+                    <a href="index.html">Kezdőlap</a>
+                    <a href="matekanalizis1.html" >Matematika Analízis I.</a>
+                    <a href="progismeretek.html" class="active">Programtervezési ismeretek</a>
+                    <a href="progalap.html">Programozás alapjai</a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section>
+                <div class="container">
+                    <div class="d-flex gap2rem">
+                        <div class="width50">
+                            <h1>Programtervezési ismeretek</h1>
+                            <p><b>Tantárgy feladata és célja:</b></p>
+                            <p>A programozási alapok elméleti kiterjesztése. Olyan elméleti alapok elsajátítása, amely minden további programozási nyelvnek része. 
+                                Modellek és alapvető algoritmusok fejlesztése, használata. Elemi algoritmusok megértése, ezek ábrázolása többféle módon 
+                                (pszeudokód, folyamatábra, struktrogram).
+                            </p>
+                            <p><b>Tárgy tematikus leírása:</b></p>
+                            <p class="marginb2rem">A modellek szerepe a probléma megoldásban, a modellezés szükségessége. 
+                                Az adat és ábrázolása, megjelenítése. Az algoritmus fogalma, az algoritmizálás. 
+                                Az algoritmus lejegyzése, ellenőrzése, dokumentálása. Az algoritmus hatékonysága. 
+                                Algoritmuskészítési technikák. A folyamatábra, struktogram, döntési táblák. 
+                                Az algoritmus realizálása, a realizáció korlátai. Korlátfeloldási, lazítási lehetőségek. 
+                                A számítógép szerepe, a hardver és a szoftver megválasztása. 
+                                Programozás és a jó program készítésének alapelvei, technikái. A feladatmegoldás lezárása, dokumentációkészítési elvek.
+                            </p>
+                            <div class="d-flex gap1rem">
+                                <a href="progalap.html" id="tosubject">Irány a következő tantárgy</a>
+                                <a href="index.html" id="backtoindex">Vissza a kezdőlapra</a>
+                            </div>
+                        </div>
+                        <div class="width50">
+                            <div class="width50" style="margin: auto;">
+                                <img src="images/progismeretek.jpg" alt="" style="height: auto; width: 100%; border: 1px solid #d1d1d1; padding: 1rem; border-radius: 0.5rem;">
+                                <p><i>Kötelező irodalom: Tömösközi Péter: Algoritmizálás alapjai, Tankönyvtár, 2011.</i></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>  
+            </section>
+        </main>
+        <footer class="text-center">
+            <p>&copy; Készítette: Bán Tamás József - QTMKZZ</p>
+        </footer>
     </body>
 </html>
